@@ -1,5 +1,5 @@
-.clase {
+.nombre-clase {
   object-fit: cover;
-  width: tamaño;
-  height: tamaño;
+  width: tamaño-px;
+  height: tamaño-px;
 }
