@@ -1,0 +1,30 @@
+div#pokemones{
+    position:absolute;
+    right: 25%;
+    top:130px;
+}
+div#personaje{
+    position:absolute;
+    left: 25%;
+    top:130px;
+}
+div#opciones{
+    position:absolute;
+    left: 25%;
+    bottom:10%;
+}
+img#poke1 {
+border-radius: 15px;
+}
+img#poke2 {
+    border-radius: 15px;
+}
+img#poke3 {
+    border-radius: 15px;
+}
+img#unopk {
+  object-fit: cover;
+  animation-iteration-count: infinite;
+  width: 250px;
+  height: 188px;
+}
