@@ -46,8 +46,9 @@
         </div>
         <div style="background-color:greenyellow;">
         <div onclick='loaditem()'>
-        <img src="https://banner2.kisspng.com/20171218/cd4/pokeball-png-5a383fe4064786.0414445215136358120257.jpg" width="250" id="pokeball">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/9/95/Poci%C3%B3n_%28Dream_World%29.png/revision/latest?cb=20110130140443" border="2px" id="pocion">
         </div>
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/b/b9/Superpoci%C3%B3n_%28Dream_World%29.png/revision/latest?cb=20110130141027" id="superpocion">
         <br>
         </div>
         <div style="background-color:skyblue;">
