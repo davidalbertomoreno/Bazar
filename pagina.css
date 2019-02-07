@@ -28,3 +28,11 @@ img#unopk {
   width: 250px;
   height: 188px;
 }
+img#pokeball {
+    cursor: pointer;
+    border-radius: 50%;
+}
+div#pichulon {
+    
+    
+}
