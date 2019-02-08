@@ -1,0 +1,264 @@
+body{
+	font-family: Helvetica, sans-serif;
+}
+
+div#space{
+	height: 20px;
+}
+
+div#JPcontainer{
+	background-color: rgba(200,200,200,0.5);
+}
+
+div#test{
+	position: relative;
+	width: 25px;
+	height: 25px;
+	background: black;
+	right: 0px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+}
+
+div#bienvenidaB{
+	position: absolute;
+	height: 50px;
+	width: 500px;
+	border-radius: 0px 0px 15px 0px;
+	top: 0;
+	left: 0;
+	background-color: rgba(200,200,225,0.5);
+}
+
+table#selectorCharacter{
+	border-radius: 15px 5px 15px 5px;
+	background-color: rgba(200,200,225,0.5);
+}
+
+div#nombreUsuarioB{
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+img#BienvenidaIMG{
+	height: 40px;
+}
+
+div#CrearPersonajeB{
+	position: absolute;
+	height: 50px;
+	border-radius: 0px 0px 15px 0px;
+	top: 0;
+	left: 0;
+	background-color: rgba(200,200,225,0.5);
+}
+
+div#CharacterCMas{
+	position: absolute;
+	width: 200px;
+	left: 10%;
+	border-radius: 50%;
+	background-color: rgba(200,200,225,0.5);
+}
+
+div#CharacterCFem{
+	position: absolute;
+	width: 200px;
+	right: 10%;
+	border-radius: 50%;
+	background-color: rgba(200,200,225,0.5);
+}
+
+.character{
+	position: absolute;
+	object-fit: cover;
+	object-position: 100% 0;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+div#CrearPersonajeForm{
+	position: relative;
+	width: 500px;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+img#CrearPersonajeIMG{
+	height: 40px;
+}
+
+div#PBox{
+	position: absolute;
+	border-radius: 15px 0px 15px 15px;
+	width: 70%;
+	height: 60%;
+	top: 0;
+	right: 0;
+	background-color: rgba(200,200,225,0.5);
+	overflow-y: scroll
+}
+
+.ImgPokPeq{
+	background-color: rgba(200,200,225,0.5);
+	object-fit: cover;
+	object-position: 100% 0;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.ImgCont{
+	cursor: pointer;
+	width: 50%;
+	border-radius: 50%;
+}
+
+.scalePok{
+	position: absolute;
+	width: 20%;
+	height: 32%;
+}
+.scaleMyPok{
+	position: absolute;
+	width: 33%;
+	height: 50%;
+}
+
+.idPokPC{
+	display: none;
+}
+
+div#PHave{
+	position: absolute;
+	border-radius: 15px 15px 0px 15px;
+	width: 50%;
+	height: 35%;
+	bottom: 0;
+	right: 20%;
+	background-color: rgba(200,200,225,0.5);
+}
+
+div#PokName{
+	position: absolute;
+	border-radius: 0px 15px 15px 0px;
+	width: 25%;
+	height: 10%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-family: Helvetica;
+	background-color: rgba(200,200,225,0.5);
+}
+div#ImgPokDIV{
+	position: absolute;
+	border-radius: 0px 15px 15px 0px;
+	width: 25%;
+	height: 50%;
+	top: 10%;
+	left: 0;
+	background-color: rgba(200,200,225,0.5);
+}
+
+img#ImgPokGra{
+	position: absolute;
+	border-radius: 15px 15px 15px 15px;
+	width: 100%;
+}
+
+div#DesPok{
+	position: absolute;
+	border-radius: 0px 15px 15px 0px;
+	width: 25%;
+	height: 40%;
+	bottom: 0%;
+	left: 0;
+	text-align: center;
+	font-family: Helvetica;
+	background-color: rgba(200,200,225,0.5);
+}
+div#SPok{
+	position: absolute;
+	border-radius: 15px 15px 15px 15px;
+	width: 75%;
+	height: 100%;
+	bottom: 0%;
+	left: 25%;
+	text-align: center;
+	font-family: Helvetica;
+	background-color: rgba(200,200,225,0.5);
+}
+div#CPok{
+	position: absolute;
+	border-radius: 15px 15px 15px 15px;
+	width: 25%;
+	height: 100%;
+	bottom: 0%;
+	left: 0%;
+	text-align: center;
+	font-family: Helvetica;
+	background-color: rgba(200,200,225,0.5);
+}
+
+div#Opt{
+	display: inline-block;
+	position: relative;
+	left: 25%;
+	width: 50%;
+}
+
+div#OptPK{
+	position: relative;
+	padding: 20px;
+	border-radius: 15px 15px 15px 15px;
+	width: 50%;
+	height: 50%;
+	text-align: center;
+	font-family: Helvetica;
+	color: white;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.bnOpt{
+	cursor: pointer;
+	width: 50%
+}
+
+div#RenamePK{
+	position: absolute;
+	border-radius: 15px 15px 15px 15px;
+	width: 30%;
+	height: 25%;
+	right: 0;
+	text-align: center;
+	font-family: Helvetica;
+	color: white;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.5);
+}
+
+div#volverPerfil{
+	position: absolute;
+	right: 0%;
+	bottom: 5%;
+	width: 25%;
+}
+
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
