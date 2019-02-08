@@ -68,6 +68,26 @@
 	</div>
 </div>
         <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/b/b9/Superpoci%C3%B3n_%28Dream_World%29.png/revision/latest?cb=20110130141027" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/e/e4/Hiperpoci%C3%B3n_%28Dream_World%29.png/revision/latest?cb=20110130134606" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/0/02/Pok%C3%A9_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest?cb=20090125150654" id="pokeball" class="clickObj" width="100px">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/5/57/Super_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest?cb=20160831125614" id="superpocion" class="clickObj" width="90px">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/c/c9/Ultra_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest?cb=20090125150713" id="superpocion" class="clickObj" width="100px">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/a/a9/Master_Ball_%28Ilustraci%C3%B3n%29.png/revision/latest?cb=20120802225204" id="superpocion" class="clickObj" width="80px">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/e/ec/Restaurar_todo_%28Dream_World%29.png/revision/latest?cb=20110130140741" id="superpocion" class="clickObj">
+        <br>
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/1/17/Ant%C3%ADdoto_%28Dream_World%29.png/revision/latest?cb=20110130120414" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/d/d8/Antiparalizador_%28Dream_World%29.png/revision/latest?cb=20110130120415" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/9/92/Antihielo_%28Dream_World%29.png/revision/latest?cb=20110130120414" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/6/63/Antiquemar_%28Dream_World%29.png/revision/latest?cb=20110130120416" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/d/d7/Despertar_%28Dream_World%29.png/revision/latest?cb=20110130120820" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/0/07/Cura_total_%28Dream_World%29.png/revision/latest?cb=20110130120819" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/a/af/%C3%89ter_%28Dream_World%29.png/revision/latest?cb=20110130121036" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/8/89/%C3%89ter_m%C3%A1ximo_%28Dream_World%29.png/revision/latest?cb=20110130121036" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/5/57/Elixir_%28Dream_World%29.png/revision/latest?cb=20110130121034" id="superpocion" class="clickObj">
+        <img src=https://vignette.wikia.nocookie.net/es.pokemon/images/f/f9/M%C3%A1ximo_elixir_%28Dream_World%29.png/revision/latest?cb=20110130121035" id="superpocion" class="clickObj">
+        <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/3/3e/Revivir_%28Dream_World%29.png/revision/latest?cb=20110130140741" id="superpocion" class="clickObj">
+        
+        
         
         
         <br>
