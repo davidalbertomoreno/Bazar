@@ -64,6 +64,7 @@
                 <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/9/95/Poci%C3%B3n_%28Dream_World%29.png/revision/latest?cb=20110130140443" id="pocion" >
                 <p><u>Descripción:</u></p>
 		<p>Cura a tus pokemones.</p>
+		<p><input type="number" name="cantidad" value="1" min="1" max="99"></p>
                 <button class="btn default">Comprar</button>
 	</div>
 </div>
