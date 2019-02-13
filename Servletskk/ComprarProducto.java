@@ -39,10 +39,14 @@ public class ComprarProducto extends HttpServlet {
         int idobj = con.idObj(objeto);
         int idpers = con.idPers(personaje);
 
-        if(con.consultas(idobj, idpers)!=false){
+        if(con.consultas(idobj, idpers)){
             con.comprarObj(idobj, idpers, Cantidad);
+            con.monedas(idpers, idpers, Cantidad);
+            response.sendRedirect("Bazar.jsp");
         }else{
             con.regcomprar(idobj, idpers, Cantidad);
+            con.monedas(idpers, idpers, Cantidad);
+            response.sendRedirect("Bazar.jsp");
         }
                 
     }
