@@ -207,6 +207,31 @@ public class Consulta extends Conexion {
         
         return false;
     }
+	
+    public int precio (int objeto){
+        
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        
+        try{
+            String consulta = "select precio from bazares where id= ?";
+            pst = getConexion().prepareStatement(consulta);
+            pst.setInt(1, objeto);
+            rs = pst.executeQuery();
+            
+            if(rs.next()){
+                return rs.getInt(1);
+            }        
+        }catch(Exception e){System.err.println("Error:\n"+e);
+        }finally{
+            try{
+                if(getConexion()!=null)getConexion().close();
+                if(pst!=null)pst.close();
+                if(rs!=null)rs.close();
+            }catch(Exception e){}
+        }
+        return 0;
+    }
     
     public int CantObj (int objeto, int personaje){
         
@@ -273,7 +298,7 @@ public class Consulta extends Conexion {
             pst.setInt(1, objeto);
             rs = pst.executeQuery();
             if(rs.next()){
-                return rs.getString(objeto);
+                return rs.getString(1);
             }              
             
             
