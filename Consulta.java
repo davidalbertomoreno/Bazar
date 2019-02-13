@@ -61,7 +61,39 @@ public class Consulta extends Conexion {
 
     }
     
-    
+    public boolean monedas (int objeto, int personaje, int cantidad){
+        
+        PreparedStatement pst = null;
+        ResultSet rs = null;
+        
+        try{
+            String consulta1 = "select precio from bazares where id=?";
+            pst = getConexion().prepareStatement(consulta1);
+            pst.setInt(1, objeto);
+            rs = pst.executeQuery();
+            if(rs.next()){
+               int precio = rs.getInt(1);
+            String consulta = "update personajes set pokemoneda = pokemoneda-?*? where id = ?";
+            pst = getConexion().prepareStatement(consulta);
+            pst.setInt(1, precio);
+            pst.setInt(2, cantidad);
+            pst.setInt(3, personaje);
+            
+            if(pst.executeUpdate()==1){
+                return true;
+            }}
+            
+        }catch(SQLException e){ System.err.println("Error:\n"+e);
+        }finally{
+            try{
+                if(getConexion()!=null)getConexion().close();
+                if(pst!=null)pst.close();
+                if(rs!=null) rs.close();
+            }catch(Exception e){System.err.println("Error:\n"+e);}
+        }
+        return false;
+    }
+	
     public boolean consultas (int objeto, int personaje){
         PreparedStatement pst = null;
         ResultSet rs = null;
