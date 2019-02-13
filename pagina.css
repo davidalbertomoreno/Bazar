@@ -22,6 +22,12 @@ img#poke2 {
 img#poke3 {
     border-radius: 15px;
 }
+div#barrabazar{
+    	width: 98.8%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 5; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+}
 .clickObj {
     cursor: pointer;
     border-radius: 0%;
