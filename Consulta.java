@@ -155,6 +155,7 @@ public class Consulta extends Conexion {
     public boolean comprarObj(int objeto, int personaje, int Cantidad){
     
           PreparedStatement pst = null;
+          ResultSet rs = null;
           
           try{
               String consulta = "update mochila set cantidad= cantidad+? where fk_objeto= ? and fk_personaje= ?";
@@ -164,25 +165,42 @@ public class Consulta extends Conexion {
               pst.setInt(3, personaje);
               
               if(pst.executeUpdate()==1){
-                return true;
+             
+                String consulta1 = "select precio from bazares where id=?";
+                pst = getConexion().prepareStatement(consulta1);
+                pst.setInt(1, objeto);
+                rs = pst.executeQuery();
+                
+                if(rs.next()){
+                   int precio = rs.getInt(1);
+                   String consulta2 = "update personajes set pokemoneda = pokemoneda-?*? where id = ?";
+                   pst = getConexion().prepareStatement(consulta2);
+                   pst.setInt(1, precio);
+                   pst.setInt(2, Cantidad);
+                   pst.setInt(3, personaje);
+            
+                   if(pst.executeUpdate()==1){
+                       return true;
+                   }
+                }
               }
-          }catch(SQLException e){
-              System.err.println("Error: "+e);
-          }finally{
-               try {
-                if(getConexion()!=null) getConexion().close();
-                if(pst!=null) pst.close();
-            } catch (Exception e) {
-                System.err.println("Error: \n"+e);
+            }catch(SQLException e){
+                System.err.println("Error: "+e);
+            }finally{
+              try{
+                  if(getConexion()!=null)getConexion().close();
+                  if(pst!=null)pst.close();
+                  if(rs!=null) rs.close();
+              }catch(Exception e){System.err.println("Error:\n"+e);}
             }
-        }
-        
         return false;
+        
     }
          
     public boolean regcomprar(int objeto, int personaje, int Cantidad){
         
         PreparedStatement pst = null;
+        ResultSet rs = null;
         
         try {
             String consulta = "insert into mochila (fk_objeto, fk_personaje, cantidad) values (?,?,?)";
@@ -192,19 +210,34 @@ public class Consulta extends Conexion {
             pst.setInt(3, Cantidad);
             
             if(pst.executeUpdate()==1){
-                return true;
+             
+                String consulta1 = "select precio from bazares where id=?";
+                pst = getConexion().prepareStatement(consulta1);
+                pst.setInt(1, objeto);
+                rs = pst.executeQuery();
+                
+                if(rs.next()){
+                   int precio = rs.getInt(1);
+                   String consulta2 = "update personajes set pokemoneda = pokemoneda-?*? where id = ?";
+                   pst = getConexion().prepareStatement(consulta2);
+                   pst.setInt(1, precio);
+                   pst.setInt(2, Cantidad);
+                   pst.setInt(3, personaje);
+            
+                   if(pst.executeUpdate()==1){
+                       return true;
+                   }
+                }
+              }
+            }catch(SQLException e){
+                System.err.println("Error: "+e);
+            }finally{
+              try{
+                  if(getConexion()!=null)getConexion().close();
+                  if(pst!=null)pst.close();
+                  if(rs!=null) rs.close();
+              }catch(Exception e){System.err.println("Error:\n"+e);}
             }
-        } catch (SQLException e) {
-            System.err.println("Error: "+e);
-        }finally{
-            try {
-                if(getConexion()!=null) getConexion().close();
-                if(pst!=null) pst.close();
-            } catch (Exception e) {
-                System.err.println("Error: \n"+e);
-            }
-        }
-        
         return false;
     }
 	
