@@ -29,23 +29,25 @@ public class ComprarProducto extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
+        HttpSession HS = request.getSession();
         
-        
-        String objeto = request.getParameter("");
-        String personaje = request.getParameter("");
+        String usuario = (String)HS.getAttribute("usuario");
+        int objeto = Integer.parseInt(request.getParameter(""));
         int Cantidad = Integer.parseInt(request.getParameter(""));
-                
+       
         Consulta con = new Consulta();
-        int idobj = con.idObj(objeto);
-        int idpers = con.idPers(personaje);
+        /*
+          int objeto = 1;
+          int personaje = 1;
+          int Cantidad = 1;
+        */
+        int personaje = con.idPers(usuario);
 
-        if(con.consultas(idobj, idpers)){
-            con.comprarObj(idobj, idpers, Cantidad);
-            con.monedas(idpers, idpers, Cantidad);
+        if(con.consultas(objeto, personaje)){
+            con.comprarObj(objeto, personaje, Cantidad);
             response.sendRedirect("Bazar.jsp");
         }else{
-            con.regcomprar(idobj, idpers, Cantidad);
-            con.monedas(idpers, idpers, Cantidad);
+            con.regcomprar(objeto, personaje, Cantidad);
             response.sendRedirect("Bazar.jsp");
         }
                 
