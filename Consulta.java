@@ -112,8 +112,7 @@ public class Consulta extends Conexion {
         }catch(SQLException e){
             System.err.println("Error: "+e);
         }finally {
-            try {
-                 if(getConexion()!=null)getConexion().close();
+            try{
                  if(pst!=null)pst.close();
                  if(rs!=null) rs.close();
             } catch (Exception e) {
