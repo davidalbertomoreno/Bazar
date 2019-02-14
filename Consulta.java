@@ -14,13 +14,13 @@ public class Consulta extends Conexion {
         ResultSet rs = null;
         
         try{
-            String consulta = "select id from personajes where nombre = ?";
+            String consulta = "select personajes.id from personajes inner join usuarios on personajes.id=usuarios.id where usuarios.nombre = ?";
             pst = getConexion().prepareStatement(consulta);
             pst.setString(1, username);
             rs = pst.executeQuery();
             
             while(rs.next()){
-                return rs.getInt(username);
+                return rs.getInt(1);
             }
             
         }catch (SQLException e){System.err.println("Error:\n"+e);}
